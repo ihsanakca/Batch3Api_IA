@@ -74,6 +74,7 @@ public class Test_02_GetRequestWithPathMethod {
         int id1=response.path("id[0]");
         assertEquals(id1,1);
         assertEquals(response.path("name[0]"),"MercanS");
+        System.out.println("response.path(\"['name'][0]***************\") = " + response.path("[0]['name']"));
 
         //son elemanın assert edelim
         int lastId=response.path("id[-1]");
