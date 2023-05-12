@@ -47,7 +47,7 @@ public class Test_02_GetRequestWithPathMethod {
         System.out.println("response.path(\"company\").toString() = " + response.path("company").toString());
 
         //bilgileri assert edelim
-        int id=response.path("id[0]");
+        int id=response.path("id[0]");  //[0].id
         assertEquals(id,24);
         assertEquals(response.path("email[0]"),"mike@gmail.com");
         assertEquals(response.path("location[0]"),"USD");
